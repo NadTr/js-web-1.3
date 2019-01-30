@@ -20,17 +20,44 @@
       <header>
         <h1>BeCode / JavaScript for the Web</h1>
         <h2>
-          <strong><i class="fas fa-arrow-right"></i> Insert exercise name here <i class="fas fa-arrow-left"></i></strong>
+          <strong><i class="fas fa-arrow-right"></i>Super Vilain application form<i class="fas fa-arrow-left"></i></strong>
         </h2>
       </header>
-      <div class="content">
-        <p>
-          <i class="fas fa-arrow-right"></i> Insert content here. <i class="fas fa-arrow-left"></i>
-        </p>
+
+        <div id="wrapper">
+          <div id=text>
+           <h1>Super Vilain application form</h1>
+           <div class="Appl">
+
+           <form action="/application" method="post">
+             <!-- super vilain name, super power, motivation and plan to conquer the world.-->
+               <div>
+                   <label for="name">Super Vilain Name :</label>
+                   <input type="text" id="name" name="user_name">
+               </div>
+               <div>
+                   <label for="power">Super Power(s) :</label>
+                   <input type="text" id="power" name="user_power">
+               </div>
+               <div>
+                   <label for="motivation">Motivation(s) :</label>
+                   <textarea id="motivation" name="user_motivation"></textarea>
+               </div><div>
+                   <label for="plan">Plan to conquer the world :</label>
+                   <textarea id="plan" name="user_plan"></textarea>
+               </div>
+           </form>
+         </div>
       </div>
+
+           <div class="box SubmitButtons">
+             <button class="button Reset" id="Reset" >Reset</button>
+             <button class="button Display" id="Display" >Display</button>
+           </div>
+
+        </div>
     </div>
 
     <script src="./script.js"></script>
   </body>
 </html>
-
